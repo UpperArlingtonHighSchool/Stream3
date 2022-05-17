@@ -3,7 +3,11 @@ public class streamProj
 {
 public static void main(String[] args) throws FileNotFoundException
 {
-//call TJs data method
-//
+//call TJ's data method
+
+//input data into Ceci's charts
+
+//run Jim's GUI to display charts
+
 }
 }
