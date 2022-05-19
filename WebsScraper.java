@@ -9,7 +9,6 @@ public class WebsScraper
 	String thing;
 	ArrayList<String> city = new ArrayList<String>();
 	ArrayList<Integer> hardness = new ArrayList<Integer>();
-	ArrayList<Integer> nums = new ArrayList<Integer>();
 	public WebsScraper() throws IOException
 	{
 		String[] search = new String[] {"Akron", "Chillicothe", "Cincinnati", "Cleveland", "Columbus", "Dayton", "Deleware", "Elyra", "Grove City", "Hamilton", "Hilliard", "Lancaster", "Loveland", "Mason", "Mentor", "Middletown", "Newark", "Painesville", "Reynoldsburg", "Toledo", "Westeville"};
@@ -50,8 +49,24 @@ public class WebsScraper
 		
 	}
 	
-	public static void main(String[] args) throws IOException
+	public void scraper()
 	{
 		new WebsScraper();
+	}
+	
+	//call this method to return an arraylist of cities
+	//if there are are any problems have cc dm me on instagram
+	public ArrayList<String> cities
+	{
+		scraper();
+		return city;
+	}
+	
+	//call this method to return an arraylist of the hardness
+	//if there are are any problems have cc dm me on instagram
+	public ArrayList<Integer>
+	{
+		scraper();
+		reuturn hardness;
 	}
 }
