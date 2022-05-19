@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LeData{
-	public static void main(String[] args) throws FileNotFoundException {
-		LeMethod();
-	}
 
 	public static ArrayList<LeHardness> LeMethod() throws FileNotFoundException {
 
