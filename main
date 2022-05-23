@@ -4,10 +4,15 @@ public class streamProj
 public static void main(String[] args) throws FileNotFoundException
 {
 //call TJ's data method
+LeData default = new LeData();
+ArrayList <LeHardness> uaData = default.LeMethod();
+
+//call Jim's data method
+
 
 //input data into Ceci's charts
 
-//run Jim's GUI to display charts
+//run GUI to display charts, data, and stats
 
 }
 }
