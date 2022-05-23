@@ -56,7 +56,7 @@ public class WebsScraper
 	
 	//call this method to return an arraylist of cities
 	//if there are are any problems have cc dm me on instagram
-	public ArrayList<String> cities
+	public ArrayList<String> cities ()
 	{
 		scraper();
 		return city;
@@ -64,9 +64,9 @@ public class WebsScraper
 	
 	//call this method to return an arraylist of the hardness
 	//if there are are any problems have cc dm me on instagram
-	public ArrayList<Integer>
+	public ArrayList<Integer> hardness()
 	{
 		scraper();
-		reuturn hardness;
+		return hardness;
 	}
 }
