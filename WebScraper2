@@ -4,12 +4,12 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class WebsScraper
+public class WebScraper2
 {
 	String thing;
 	ArrayList<String> city = new ArrayList<String>();
-	ArrayList<Double> hardness = new ArrayList<Integer>();
-	public WebsScraper() throws IOException
+	ArrayList<Double> ph = new ArrayList<Double>();
+	public WebScraper2() throws IOException
 	{
 		String[] search = new String[] {"Youngstown", "Ironton", "Prospect", "Dublin", "Antwerp", "Findlay", "Milan", "Vermillion", "Elyria", "Independence", "Painesville", "Georgesville", "Warren"};
 		String[] search2 = new String[] {"7.6", "7.6", "7.5", "8.0", "8.3", "7.9", "7.9", "8.0", "8.1", "8.1", "7.4", "8.4", "7.7"};
@@ -39,24 +39,24 @@ public class WebsScraper
 				if(index != -1)
 				{
 					search2[i] = "i dont exist";
-					hardness.add(Integer.parseDouble(total.substring(index, index + term.length())));
+					ph.add(Double.parseDouble(total.substring(index, index + term.length())));
 				}
 			}
 		}
 		
 		System.out.println(city);
-		System.out.println(hardness);
+		System.out.println(ph);
 		
 	}
 	
-	public void scraper()
+	public void scraper() throws IOException
 	{
-		new WebsScraper();
+		new WebScraper2();
 	}
 	
 	//call this method to return an arraylist of cities
 	//if there are are any problems have cc dm me on instagram
-	public ArrayList<String> cities ()
+	public ArrayList<String> cities () throws IOException
 	{
 		scraper();
 		return city;
@@ -64,9 +64,9 @@ public class WebsScraper
 	
 	//call this method to return an arraylist of the hardness
 	//if there are are any problems have cc dm me on instagram
-	public ArrayList<Integer> hardness()
+	public ArrayList<Double> hardness() throws IOException
 	{
 		scraper();
-		return hardness;
+		return ph;
 	}
 }
